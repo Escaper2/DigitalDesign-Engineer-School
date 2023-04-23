@@ -1,0 +1,15 @@
+D:\work\DigitalDesign\TextAnalyzer\TextAnalyzer\bin\Debug\net6.0\TextAnalyzer.exe
+D:\work\DigitalDesign\TextAnalyzer\TextAnalyzer\bin\Debug\net6.0\TextAnalyzer.deps.json
+D:\work\DigitalDesign\TextAnalyzer\TextAnalyzer\bin\Debug\net6.0\TextAnalyzer.runtimeconfig.json
+D:\work\DigitalDesign\TextAnalyzer\TextAnalyzer\bin\Debug\net6.0\TextAnalyzer.dll
+D:\work\DigitalDesign\TextAnalyzer\TextAnalyzer\bin\Debug\net6.0\ref\TextAnalyzer.dll
+D:\work\DigitalDesign\TextAnalyzer\TextAnalyzer\bin\Debug\net6.0\TextAnalyzer.pdb
+D:\work\DigitalDesign\TextAnalyzer\TextAnalyzer\obj\Debug\net6.0\TextAnalyzer.csproj.AssemblyReference.cache
+D:\work\DigitalDesign\TextAnalyzer\TextAnalyzer\obj\Debug\net6.0\TextAnalyzer.GeneratedMSBuildEditorConfig.editorconfig
+D:\work\DigitalDesign\TextAnalyzer\TextAnalyzer\obj\Debug\net6.0\TextAnalyzer.AssemblyInfoInputs.cache
+D:\work\DigitalDesign\TextAnalyzer\TextAnalyzer\obj\Debug\net6.0\TextAnalyzer.AssemblyInfo.cs
+D:\work\DigitalDesign\TextAnalyzer\TextAnalyzer\obj\Debug\net6.0\TextAnalyzer.csproj.CoreCompileInputs.cache
+D:\work\DigitalDesign\TextAnalyzer\TextAnalyzer\obj\Debug\net6.0\TextAnalyzer.dll
+D:\work\DigitalDesign\TextAnalyzer\TextAnalyzer\obj\Debug\net6.0\ref\TextAnalyzer.dll
+D:\work\DigitalDesign\TextAnalyzer\TextAnalyzer\obj\Debug\net6.0\TextAnalyzer.pdb
+D:\work\DigitalDesign\TextAnalyzer\TextAnalyzer\obj\Debug\net6.0\TextAnalyzer.genruntimeconfig.cache
