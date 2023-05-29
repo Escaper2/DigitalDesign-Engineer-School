@@ -5,7 +5,42 @@
       "ProjectGuid": "6d1e5e4e-17ac-4b42-a6a8-d49f4deaedcf",
       "DisplayName": "TextAnalyzer",
       "ColorIndex": 0
+    },
+    "c43dd677-9c67-4fde-8c84-f2b4c3767577": {
+      "ProjectGuid": "c43dd677-9c67-4fde-8c84-f2b4c3767577",
+      "DisplayName": "TextProcessor",
+      "ColorIndex": 1
+    },
+    "b9578da2-2318-408a-aeb4-03817889186c": {
+      "ProjectGuid": "b9578da2-2318-408a-aeb4-03817889186c",
+      "DisplayName": "FirstTask",
+      "ColorIndex": 2
+    },
+    "39d74825-955b-46cb-968f-3fda1eab6644": {
+      "ProjectGuid": "39d74825-955b-46cb-968f-3fda1eab6644",
+      "DisplayName": "FirstTask",
+      "ColorIndex": 3
+    },
+    "bab9cb1d-3e47-4cb1-abf1-df298b0d2f09": {
+      "ProjectGuid": "bab9cb1d-3e47-4cb1-abf1-df298b0d2f09",
+      "DisplayName": "TextProcessor",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "acbe8a8f-ac0c-4be0-ab65-58ebce6ddf61": {
+      "ProjectGuid": "acbe8a8f-ac0c-4be0-ab65-58ebce6ddf61",
+      "DisplayName": "SecondTask",
+      "ColorIndex": 5
+    },
+    "e5d10956-257a-4b54-856b-3a11b6a4b433": {
+      "ProjectGuid": "e5d10956-257a-4b54-856b-3a11b6a4b433",
+      "DisplayName": "TextProcessor",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 7
 }

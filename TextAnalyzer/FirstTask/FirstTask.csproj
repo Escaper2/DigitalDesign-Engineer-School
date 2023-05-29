@@ -8,9 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="TextProcessor">
-      <HintPath>TextProcessor.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\Dll\Dll.csproj" />
   </ItemGroup>
 
 </Project>

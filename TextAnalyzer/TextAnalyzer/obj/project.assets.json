@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Dll/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Dll.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Dll.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Dll/1.0.0": {
+      "type": "project",
+      "path": "../Dll/Dll.csproj",
+      "msbuildProject": "../Dll/Dll.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Dll >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\vlad8\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\work\\DigitalDesign\\TextAnalyzer\\Dll\\Dll.csproj": {
+              "projectPath": "D:\\work\\DigitalDesign\\TextAnalyzer\\Dll\\Dll.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

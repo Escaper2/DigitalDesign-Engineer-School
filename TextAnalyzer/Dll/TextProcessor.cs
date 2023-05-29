@@ -1,8 +1,8 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace SecondTask
+namespace Dll
 {
-    public class TextProcessorDLL
+    public class TextProcessor
     {
         private const string FolderPath = "..\\..\\..\\Resources\\";
 

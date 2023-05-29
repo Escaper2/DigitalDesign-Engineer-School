@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Reflection;
 using System.Text;
-using TextProcessor;
+using Dll;
 
 namespace SecondTask
 {
@@ -32,7 +32,7 @@ namespace SecondTask
             var stopwatch2 = new Stopwatch();
 
 
-            var textProcessor = new TextProcessor.TextProcessor();
+            var textProcessor = new Dll.TextProcessor();
 
             var type = textProcessor.GetType();
 
