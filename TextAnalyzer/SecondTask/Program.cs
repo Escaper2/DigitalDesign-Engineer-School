@@ -8,7 +8,7 @@ namespace SecondTask
     internal class Program
     {
 
-        private const string FolderPath = "..\\..\\..\\Resources\\";
+        private const string FolderPath = "..\\..\\..\\..\\Resources\\";
 
         static void Main()
         {

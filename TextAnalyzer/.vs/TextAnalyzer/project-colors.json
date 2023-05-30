@@ -40,7 +40,52 @@
       "ProjectGuid": "e5d10956-257a-4b54-856b-3a11b6a4b433",
       "DisplayName": "TextProcessor",
       "ColorIndex": 6
+    },
+    "4cf51376-54f8-4865-a624-b54bb9179050": {
+      "ProjectGuid": "4cf51376-54f8-4865-a624-b54bb9179050",
+      "DisplayName": "Dll",
+      "ColorIndex": 7
+    },
+    "179d4e4e-aa82-41c8-8ffb-3b707f08bf96": {
+      "ProjectGuid": "179d4e4e-aa82-41c8-8ffb-3b707f08bf96",
+      "DisplayName": "WebApi",
+      "ColorIndex": 8
+    },
+    "6985cec9-eedb-4fbc-8e56-0fa51a23559c": {
+      "ProjectGuid": "6985cec9-eedb-4fbc-8e56-0fa51a23559c",
+      "DisplayName": "TaskCaller",
+      "ColorIndex": 9
+    },
+    "c9504555-e14b-4e97-bbe4-2cc9670056ef": {
+      "ProjectGuid": "c9504555-e14b-4e97-bbe4-2cc9670056ef",
+      "DisplayName": "ThirdTaskCaller",
+      "ColorIndex": 10
+    },
+    "902701d5-cf0f-4953-b9d6-94f543b12476": {
+      "ProjectGuid": "902701d5-cf0f-4953-b9d6-94f543b12476",
+      "DisplayName": "ConsoleApp1",
+      "ColorIndex": 11
+    },
+    "dd207000-4c4f-43fd-8220-0d72bbd02541": {
+      "ProjectGuid": "dd207000-4c4f-43fd-8220-0d72bbd02541",
+      "DisplayName": "ConsoleApp1",
+      "ColorIndex": 12
+    },
+    "7f2f779b-b976-47a9-a1ec-84700783d1ef": {
+      "ProjectGuid": "7f2f779b-b976-47a9-a1ec-84700783d1ef",
+      "DisplayName": "WebApi",
+      "ColorIndex": 13
+    },
+    "3cb4cc36-2f7e-462e-8ef9-7ec7ce1cf7e3": {
+      "ProjectGuid": "3cb4cc36-2f7e-462e-8ef9-7ec7ce1cf7e3",
+      "DisplayName": "ThirdTaskCaller",
+      "ColorIndex": 14
+    },
+    "d3374a32-35b2-4ad5-b154-6760726c749b": {
+      "ProjectGuid": "d3374a32-35b2-4ad5-b154-6760726c749b",
+      "DisplayName": "WebApi",
+      "ColorIndex": 15
     }
   },
-  "NextColorIndex": 7
+  "NextColorIndex": 0
 }

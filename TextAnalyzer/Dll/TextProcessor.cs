@@ -4,7 +4,7 @@ namespace Dll
 {
     public class TextProcessor
     {
-        private const string FolderPath = "..\\..\\..\\Resources\\";
+        private const string FolderPath = "..\\..\\..\\..\\Resources\\";
 
         public IEnumerable<string> RunParallel(string allText)
         {

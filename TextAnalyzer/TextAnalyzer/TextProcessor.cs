@@ -11,7 +11,7 @@ namespace TextAnalyzer
 {
     internal class TextProcessor
     {
-        private const string FolderPath = "..\\..\\..\\Resources\\";
+        private const string FolderPath = "..\\..\\..\\..\\Resources\\";
 
         private string _path;
 
