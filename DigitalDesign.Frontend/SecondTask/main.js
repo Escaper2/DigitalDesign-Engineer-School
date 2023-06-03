@@ -14,7 +14,7 @@ async function parseData() {
     for (const valute in valutes) {
         const newElement = document.createElement('div');
         if (valute === "USD" || valute === "EUR") {
-            newElement.innerHTML = `${valutes[valute]["Name"]}:  - ${valutes[valute]["Value"]} рублей`;
+            newElement.innerHTML = `${valutes[valute]["Name"]}:  ${valutes[valute]["Value"]} рублей`;
             content.append(newElement)
         }
     }
