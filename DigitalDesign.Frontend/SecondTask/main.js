@@ -26,3 +26,5 @@ async function onClick() {
 }
 
 button.addEventListener('click', onClick);
+
+parseData();
