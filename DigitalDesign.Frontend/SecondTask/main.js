@@ -11,6 +11,7 @@ async function parseData() {
     const data = await getData();
     const valutes = data["Valute"];
     console.log(valutes);
+    content.innerHTML = ""
     for (const valute in valutes) {
         const newElement = document.createElement('div');
         if (valute === "USD" || valute === "EUR") {
