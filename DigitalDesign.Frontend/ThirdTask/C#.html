@@ -255,7 +255,12 @@
                     {this.state.choices.map((choice, idx) => {
                         return (
                             <p key={idx}>
-                                <input type="radio" id={choice.value} value={choice.value} name="subject" onClick={this.onClick}/>
+                                <input
+                                  type="radio"
+                                  id={choice.value}
+                                  value={choice.value}
+                                  checked={this.state.selectedOption === choice.name}
+                                  onClick={this.onClick}/>
                                 <label htmlFor={choice.value}>{choice.name}</label>
                             </p>);
                     })}
