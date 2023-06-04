@@ -22,9 +22,7 @@ async function parseData() {
 }
 
 async function onClick() {
-    button.removeEventListener('click', onClick);
-    const data = await getData();
-    await parseData(data);
+    await parseData();
 }
 
 button.addEventListener('click', onClick);
