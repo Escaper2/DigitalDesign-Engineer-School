@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Язык программирования C#</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #6495ED;
+            font-family: "Cascadia Mono", serif;
+            color: white
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .main-container {
+            display: flex;
+            width: 80%;
+            padding: 10px 20px;
+            border: 1px solid blue;
+            border-radius: 20px;
+            margin: 0 auto 2rem;
+            flex: 1;
+        }
+
+        .image {
+            max-width: 600px;
+            max-height: 600px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .column {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+
+        .row-container {
+            display: flex;
+            width: 80%;
+            margin: 0 auto 2rem;
+            flex-direction: row;
+            gap: 50px;
+        }
+
+        .row-align-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .row-column {
+            padding: 10px 20px;
+            border: 1px solid blue;
+            border-radius: 30px;
+            flex: 1;
+        }
+
+        .form-row {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            padding: 10px;
+            background: #603c93;
+            color: white;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            gap: 0.2rem;
+        }
+
+        #get-data {
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .main-container {
+                flex-direction: column;
+            }
+
+            .row-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+<h1 class="title">Язык программирования C#</h1>
+
+<div class="main-container">
+    <div class="column">
+        <div class="description">
+            C# — объектно-ориентированный язык программирования. Разработан в
+            1998—2001 годах группой инженеров компании Microsoft под руководством
+            Андерса Хейлсберга и Скотта Вильтаумота как язык разработки приложений
+            для платформы Microsoft .NET Framework. На сегодняшний момент язык
+            программирования C# один из самых мощных, быстро развивающихся и
+            востребованных языков в ИТ-отрасли. В настоящий момент на нем пишутся
+            самые различные приложения: от небольших десктопных программок до крупных
+            веб-порталов и веб-сервисов, обслуживающих ежедневно миллионы пользователей.
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="image">
+            <img src="image/csharp-logo.png" alt="C# Logo">
+        </div>
+    </div>
+</div>
+
+
+<div class="row-container">
+    <div class="row-column">
+        <div class="description">
+            Полезные ссылки:
+            <p>
+                <a href="https://learn.microsoft.com/ru-ru/dotnet/csharp/" target="_blank">Официальная документация по
+                    C#</a><br>
+                <a href="https://metanit.com/sharp/" target="_blank"> Русскоязычное руководство по языку от
+                    Metanit</a><br>
+                <a href="https://proglib.io/p/top-10-knig-po-c-ot-novichka-do-professionala-2020-03-18" target="_blank">
+                    Подборка книг по C#</a><br>
+                <a href="https://www.digdes.ru/" target="_blank">Компания Digital Design</a>
+            </p>
+        </div>
+    </div>
+    <div class="row-column">
+        <div class="description">
+            Видеоматериалы:
+            <p>
+                <a href="https://www.youtube.com/playlist?list=PLQOaTSbfxUtD6kMmAYc8Fooqya3pjLs1N" target="_blank">Сборник
+                    видеоруков по языку от SimpleCode</a><br>
+                <a href="https://www.youtube.com/playlist?list=PLIIXgDT0bKw6i4jQkHVgIrnsP-DcvBieq" target="_blank">Видео-разбор
+                    и объяснение всех глав книги CLR via C#</a><br>
+                <a href="https://youtu.be/H7E_URbqOb4" target="_blank">Большое интервью с Senior .NET Developer</a><br>
+                <a href="https://youtu.be/zQbk4hVzVyU" target="_blank">Популярные вопросы на собеседовании для Junior C#
+                    разработчика</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="row-container">
+    <div class="row-column">
+        <span class="row-align-center">
+            Хорошо знаете C#? Присоединяйтесь к нашей команде!
+        </span>
+        <div class="description">
+            <br>
+            Выберите интересующую вас вакансию
+            <div id="root"></div>
+        </div>
+    </div>
+</div>
+
+<div class="row-container">
+    <div class="row-column">
+        <span class="row-align-center">
+            Текущий курс доллара и евро:
+        </span>
+        <div class="description">Узнать текущую стоимость доллара и евро:</div>
+        <br><button id="get-data">Отправить запрос</button></br>
+        <div id="content"></div>
+    </div>
+</div>
+<br>
+
+<footer>
+    &copy;
+    <span class="year">2023</span>
+    <span>Vladislav Gumbatov</span>
+</footer>
+<script type="text/javascript" src="main.js"></script>
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="form.js" type="text/babel"></script>
+</body>
+</html>
