@@ -1,4 +1,4 @@
-# DigitalDesign-Engineering-School
+# DigitalDesign Engineer's School
 
 Школа инженера от компании [Digital Design](https://digdes.ru/it-university/shkola-inzhenera)
 
