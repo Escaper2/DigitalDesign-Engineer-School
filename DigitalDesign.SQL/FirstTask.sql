@@ -40,16 +40,38 @@ ORDER BY Quantity DESC,
 SELECT sales.OrderDate,
        person.LastName,
        person.FirstName,
-       concat('Product Name: ', product.Name, '   ', 'Quantity: ', detail.OrderQty) as 'Product'
+       STRING_AGG(CONCAT(Product.Name, N' Количество: ', detail.OrderQty, N' шт.'),
+                  CHAR(10)) as 'Product'
 FROM Sales.SalesOrderHeader as sales
          JOIN Sales.Customer as customer on sales.CustomerID = customer.CustomerID
          JOIN Person.Person as person on customer.PersonID = person.BusinessEntityID
-         JOIN Sales.SalesOrderDetail as detail on sales.SalesOrderID = detail.SalesOrderDetailID
+         JOIN Sales.SalesOrderDetail as detail on sales.SalesOrderID = detail.SalesOrderID
          JOIN Production.Product as product on detail.ProductID = product.ProductID
 WHERE sales.OrderDate = (SELECT MIN(ord.OrderDate)
                          FROM Sales.SalesOrderHeader as ord
                          WHERE ord.CustomerID = sales.CustomerID)
-ORDER BY sales.OrderDate
+GROUP BY sales.OrderDate,
+         person.LastName,
+         Person.FirstName
+ORDER BY sales.OrderDate DESC;
+
+/* 6*/
+
+SELECT CONCAT(person.LastName, ' ', left(person.FirstName, 1), '.', left(person.MiddleName, 1)) AS ChiefName,
+       employee.HireDate                                                                        AS ChiefHireDate,
+       employee.BirthDate                                                                       AS ChiefBirthDate,
+       CONCAT(secPerson.LastName, ' ', left(secPerson.FirstName, 1), '.',
+              left(secPerson.MiddleName, 1))                                                    AS EmployeeName,
+       secEmployee.HireDate                                                                     AS EmployeeHireDate,
+       secEmployee.BirthDate                                                                    AS EmployeeBimthDate
+FROM HumanResources.Employee AS employee
+         JOIN HumanResources.Employee as secEmployee
+              on secEmployee.OrganizationNode.GetAncestor(1) = employee.OrganizationNode
+         JOIN Person.Person as person on employee.BusinessEntityID = person.BusinessEntityID
+         JOIN Person.Person as secPerson on secEmployee.BusinessEntityID = secPerson.BusinessEntityID
+WHERE employee.BirthDate > secEmployee.BirthDate
+  AND employee.HireDate > secEmployee.HireDate
+ORDER BY employee.OrganizationNode, secPerson.LastName, secPerson.FirstName, len(employee.OrganizationNode.ToString());
 
 /* 7*/
 
@@ -60,36 +82,26 @@ CREATE PROCEDURE HumanResources.Bachelor(
 )
 AS
 BEGIN
-    SELECT @CountFoundEmployees = COUNT(Employee.BusinessEntityID)
+    SELECT *
     FROM HumanResources.Employee
-    WHERE Employee.Gender = 'M'
-      AND Employee.MaritalStatus = 'S'
-      AND Employee.BirthDate >= @TimeStart
-      AND Employee.BirthDate <= @TimeEnd
-    SELECT Employee.BusinessEntityID,
-           Employee.NationalIDNumber,
-           Employee.LoginID,
-           Employee.OrganizationNode,
-           Employee.OrganizationLevel,
-           Employee.JobTitle,
-           Employee.BirthDate,
-           Employee.MaritalStatus,
-           Employee.Gender,
-           Employee.HireDate,
-           Employee.SalariedFlag,
-           Employee.VacationHours,
-           Employee.SickLeaveHours,
-           Employee.CurrentFlag,
-           Employee.rowguid,
-           Employee.ModifiedDate
+    WHERE Gender = 'M'
+      and MaritalStatus = 'S'
+      and BirthDate >= @TimeStart
+      and BirthDate <= @TimeEnd
+
+    SELECT @CountFoundEmployees = COUNT(*)
     FROM HumanResources.Employee
-    WHERE Employee.Gender = 'M'
-      AND Employee.MaritalStatus = 'S'
-      AND Employee.BirthDate >= @TimeStart
-      AND Employee.BirthDate <= @TimeEnd
-    GROUP BY Employee.BusinessEntityID, Employee.NationalIDNumber, Employee.LoginID,
-             Employee.OrganizationNode, Employee.OrganizationLevel, Employee.JobTitle, Employee.BirthDate,
-             Employee.MaritalStatus, Employee.Gender, Employee.HireDate,
-             Employee.SalariedFlag, Employee.VacationHours, Employee.SickLeaveHours, Employee.CurrentFlag,
-             Employee.rowguid, Employee.ModifiedDate;
-END;
+    WHERE Gender = 'M'
+      and MaritalStatus = 'S'
+      and BirthDate >= @TimeStart
+      and BirthDate <= @TimeEnd
+END
+
+DECLARE @total INT
+DECLARE @a date
+DECLARE @b date
+SELECT @a = PARSE('01.01.1969' as date)
+SELECT @b = PARSE('01.01.2000' as date)
+    EXEC HumanResources.Bachelor @a, @b, @total output
+SELECT @total
+    DROP PROCEDURE HumanResources.Bachelor;
