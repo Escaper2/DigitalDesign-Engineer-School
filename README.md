@@ -31,9 +31,15 @@
 ## Блок SQL
 
 [Задачи](https://docs.google.com/document/d/1_oguV5uQfBG9Q1bgQYI2EP12yx0sDE2i/edit?usp=sharing&ouid=108138686845824193994&rtpof=true&sd=true)
+
 • [Первое задание. Запросы](https://github.com/Escaper2/DigitalDesign-Engineer-School/blob/master/DigitalDesign.SQL/FirstTask.sql)
+
 • [Второе задание. Нормализация](https://github.com/Escaper2/DigitalDesign-Engineer-School/blob/master/DigitalDesign.SQL/SecondTask/SecondTask.sql)
+
 • [Второе задание. Нормализация, альтернативная версия](https://github.com/Escaper2/DigitalDesign-Engineer-School/blob/master/DigitalDesign.SQL/SecondTask/AlternativeSecondTask.sql)
+
 • [Второе задание. Индексы](https://github.com/Escaper2/DigitalDesign-Engineer-School/blob/master/DigitalDesign.SQL/SecondTask/IndexesTask.docx)
+
 • [Третье задание. Оптимизация запросов](https://github.com/Escaper2/DigitalDesign-Engineer-School/blob/master/DigitalDesign.SQL/ThirdTask.sql)
+
 
