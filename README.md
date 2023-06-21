@@ -37,8 +37,9 @@
 • [Второе задание. Нормализация](https://github.com/Escaper2/DigitalDesign-Engineer-School/blob/master/DigitalDesign.SQL/SecondTask/SecondTask.sql)  
  &nbsp;&nbsp;&nbsp;• [Диаграмма таблиц](https://github.com/Escaper2/DigitalDesign-Engineer-School/blob/master/DigitalDesign.SQL/SecondTask/SecondTaskDiagram.jpg)
 
-• [Второе задание. Нормализация, альтернативная версия](https://github.com/Escaper2/DigitalDesign-Engineer-School/blob/master/DigitalDesign.SQL/SecondTask/AlternativeSecondTask.sql)
-
+• [Второе задание. Нормализация, альтернативная версия](https://github.com/Escaper2/DigitalDesign-Engineer-School/blob/master/DigitalDesign.SQL/SecondTask/AlternativeSecondTask.sql)  
+ &nbsp;&nbsp;&nbsp;• [Диаграмма таблиц](https://github.com/Escaper2/DigitalDesign-Engineer-School/blob/master/DigitalDesign.SQL/SecondTask/AlternativeSecondTaskDiagram.jpg)
+ 
 • [Второе задание. Индексы](https://github.com/Escaper2/DigitalDesign-Engineer-School/blob/master/DigitalDesign.SQL/SecondTask/IndexesTask.docx)
 
 • [Третье задание. Оптимизация запросов](https://github.com/Escaper2/DigitalDesign-Engineer-School/blob/master/DigitalDesign.SQL/ThirdTask.sql)
